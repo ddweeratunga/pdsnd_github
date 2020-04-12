@@ -13,10 +13,10 @@ months = ('january', 'february', 'march', 'april', 'may', 'june')
 weekdays = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
             'saturday')
 
-#mark_place = 0
+
 
 def get_filters():
-    
+
     """
     Asks user to specify a city, month, and day to analyze.
 
@@ -27,7 +27,7 @@ def get_filters():
     """
 
     print('Hello! Let\'s explore some US bikeshare data!')
-    
+
 # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input("Please select a city to see the data from Chicago, New York City, or Washington: ").lower()
@@ -35,18 +35,18 @@ def get_filters():
             break
         else:
             print ("Incorect entry, Please try again.")
-    
+
 
 # get user input for month (january, february, ... , june)
-    
+
     while True:
         month = input ("Please select a month to filter the data from January, February, March, April, May, June: ").lower()
         if month in months:
             break
         else:
             print ("Incorect entry, Please try again.")
-   
-    
+
+
  # get user input for day of week ( monday, tuesday, ... sunday)
     while True:
         day = input("Now please enter a day of the week you like to see the data: ").lower()
@@ -54,8 +54,8 @@ def get_filters():
             break
         else:
             print ("Incorect entry, Please try again.")
-   
-        
+
+
     print('-'*40)
     return city, month, day
 
@@ -212,8 +212,8 @@ def user_stats(df, city):
 
 def raw_data(df, mark_place):
     """Display 5 line of sorted raw data each time."""
-    
-    #ask your choice to see raw data 
+
+    #ask your choice to see raw data
     while True:
         rw_res = input("Would you like to see raw data? ").lower()
         if rw_res in ('yes', 'no'):
@@ -228,7 +228,7 @@ def raw_data(df, mark_place):
             print(df.iloc[mark_place:mark_place+5].to_string())
             print("\n")
             mark_place += 5
-            
+
             if mark_place > 0:
                 last_place = input("would you like to see 5 more raws of data? ")
                 if last_place == 'no':
