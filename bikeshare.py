@@ -13,7 +13,7 @@ months = ('january', 'february', 'march', 'april', 'may', 'june')
 weekdays = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
             'saturday')
 
-#mark_place = 0
+
 
 def get_filters():
 
@@ -35,7 +35,7 @@ def get_filters():
         if city in CITY_DATA.keys():
             break
         else:
-            print ("Incorect entry, Please try again.")
+            print ("Your entry is an incorect entry, Please try again.")
 
 
 # get user input for month (january, february, ... , june)
@@ -62,7 +62,7 @@ def get_filters():
 
 
 def load_data(city, month, day):
-    """Load data for the specified filters of city(ies), month(s) and
+    """Load data for the specified filters of city(s), month(s) and
        day(s) whenever applicable.
     Args:
         (str) city - name of the city(ies) to analyze
