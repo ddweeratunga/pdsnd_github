@@ -34,7 +34,7 @@ def get_filters():
         if city in CITY_DATA.keys():
             break
         else:
-            print ("Incorect entry, Please try again.")
+            print ("Your entry is an incorect entry, Please try again.")
 
 
 # get user input for month (january, february, ... , june)
