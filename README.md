@@ -1,18 +1,24 @@
 ### Date created
-Include the date you created this project and README file.
+14.04.2020
 
 ### Project Title
-Replace the Project Title
+US bikeshare project
 
 ### Description
-Describe what your project is about and what it does
-udacity version control project
+Ad interactive application is created to take an input from a user (a city, month, day of the week) and provide an informative information about the bikeshare data
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity programming for data science tutorial and reference documents
+git hub documentation
 
 ### Additional changes
-Second change made to readme file for submission 
+Second change made to readme file for submission
+
+### Resubmission after feedback
+Following initial submission, multiple changes were made to README File
